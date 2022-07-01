@@ -1,0 +1,12 @@
+diff --git a/node_modules/preact-cli/lib/lib/webpack/webpack-client-config.js b/node_modules/preact-cli/lib/lib/webpack/webpack-client-config.js
+index 6e2c45e..2f7125c 100644
+--- a/node_modules/preact-cli/lib/lib/webpack/webpack-client-config.js
++++ b/node_modules/preact-cli/lib/lib/webpack/webpack-client-config.js
+@@ -295,6 +295,7 @@ function isDev(env) {
+ 
+ 		devServer: {
+ 			hot: true,
++            liveReload: !env.refresh,
+ 			compress: true,
+ 			devMiddleware: {
+ 				publicPath: '/',
